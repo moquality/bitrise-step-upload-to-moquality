@@ -10,7 +10,7 @@
 title: |-
   Upload to MoQuality
 summary: |
-  Updates MoQuality's CLI and uploads an apk file to MoQuality
+  Uploads an apk file to MoQuality
 description: |
   See summary
 website: https://github.com/moquality/bitrise-step-upload-to-moquality
@@ -64,14 +64,36 @@ toolkit:
 
 
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - API_KEY: Default Value - you can leave this empty if you want to
     opts:
-      title: "Example Step Input"
-      summary: Summary. No more than 2-3 sentences.
+      title: "API key"
+      summary: A MoQuality user or team's API key
       description: |
-        Description of this input.
+        This key is necessary to log in to MoQuality and upload the app.
 
-        Can be Markdown formatted text.
+        It can be found on `Personal Profile` tab on the account page of the [MoQuality website](https://app.moquality.com/account/).
+      is_expand: true
+      is_required: true
+      value_options: []
+  - APK_PATH:
+    opts:
+      title: "Path to APK file"
+      summary: The path to an app's apk file.
+      description: |
+        This path is necessary to determine the location of the app to be uploaded to MoQuality.
+
+        This path is often generated as an output value of a build step.
+      is_expand: true
+      is_required: true
+      value_options: []
+  - APP_ID:
+    opts:
+      title: "MoQuality app Id"
+      summary: The identifier for a MoQuality app
+      description: |
+        The MoQuality app Id is necessary to determine which app you are uploading.
+
+        You can find the app Id by [installing the MQ CLI](http://docs.moquality.com/integration-ci-cd/mq-cli/), running `mq login`, and then `mq apps` to view your list of apps with their respective app Ids.
       is_expand: true
       is_required: true
       value_options: []
