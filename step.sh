@@ -9,7 +9,7 @@
     BOLD=`tput bold`
     GREEN=`tput setaf 2`
     PURPLE=`tput setaf 56`
-    NORMAL=`tput sgr 0` # No formatting
+    NORMAL=`tput sgr 0`
 
     echo -e "${BOLD}${PURPLE}Logging in to your MoQuality account...${NORMAL}"
     mq login -a $API_KEY

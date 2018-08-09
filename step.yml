@@ -10,9 +10,9 @@
 title: |-
   Upload to MoQuality
 summary: |
-  Uploads an apk file to MoQuality
+  Uploads an APK file to MoQuality
 description: |
-  See summary
+  This step logs into your MoQuality account and uploads an APK file to MoQuality. Upon upload, a new version of your app is created with the given APK file.
 website: https://github.com/moquality/bitrise-step-upload-to-moquality
 source_code_url: https://github.com/moquality/bitrise-step-upload-to-moquality
 support_url: https://github.com/moquality/bitrise-step-upload-to-moquality/issues
@@ -64,7 +64,7 @@ toolkit:
 
 
 inputs:
-  - API_KEY: Default Value - you can leave this empty if you want to
+  - API_KEY:
     opts:
       title: "API key"
       summary: A MoQuality user or team's API key
@@ -78,7 +78,7 @@ inputs:
   - APK_PATH: "$BITRISE_APK_APTH"
     opts:
       title: "Path to APK file"
-      summary: The path to an app's apk file.
+      summary: The path to an app's APK file.
       description: |
         This path is necessary to determine the location of the app to be uploaded to MoQuality.
 

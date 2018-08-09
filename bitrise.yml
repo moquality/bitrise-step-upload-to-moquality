@@ -40,9 +40,9 @@ workflows:
           file if you would not specify another value.
         run_if: true
         inputs:
-        - API_KEY: API key
-        - APK_PATH: Path to apk file
-        - APP_ID: MoQuality app Id
+        - API_KEY: $API_KEY
+        - APK_PATH: $APK_PATH
+        - APP_ID: $APP_ID
     - script:
         inputs:
         - content: |
