@@ -97,13 +97,3 @@ inputs:
       is_expand: true
       is_required: true
       value_options: []
-
-outputs:
-  - STEP_OUTPUT:
-    opts:
-      title: "Upload Status"
-      summary: A message about the status of the upload to MoQuality.
-      description: |
-        This output specifies the success or failure of the upload to MoQuality.
-
-        In the event of an error, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.

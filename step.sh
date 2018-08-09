@@ -6,7 +6,7 @@ mq user
 mq upload -a $APP_ID -f $APK_PATH
 mq apps
 
-"**Your app has been successfully uploaded to MoQuality!**"
+echo "**Your app has been successfully uploaded to MoQuality!**"
 #
 # --- Exit codes:
 # The exit code of your Step is very important. If you return
