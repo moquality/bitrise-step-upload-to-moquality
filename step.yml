@@ -84,8 +84,8 @@ inputs:
 
         This path is often generated as an output value of a build step.
       is_expand: true
-      is_required: true
-      value_options: []
+      is_required: false
+      value_options: [$BITRISE_APK_PATH]
   - APP_ID:
     opts:
       title: "MoQuality app Id"
@@ -101,9 +101,9 @@ inputs:
 outputs:
   - EXAMPLE_STEP_OUTPUT:
     opts:
-      title: "Example Step Output"
-      summary: Summary. No more than 2-3 sentences.
+      title: "Upload Status"
+      summary: A message about the status of the upload to MoQuality.
       description: |
-        Description of this output.
+        This output specifies the success or failure of the upload to MoQuality.
 
-        Can be Markdown formatted text.
+        In the event of an error, please open an issue on our [public GitHub repository](https://github.com/moquality/devcenter/issues). Alternatively, you can report your error to <hello@moquality.com>.
