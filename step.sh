@@ -5,7 +5,7 @@ echo "This is the value specified for the input 'example_step_input': ${example_
 
 mq login -a $API_KEY
 mq user
-mq upload -a $APP_ID -f $APK_PATH/app-debug.apk
+mq upload -a $APP_ID -f $APK_PATH
 mq apps
 
 #
