@@ -2,10 +2,6 @@
 {
     set -ex
 
-    fb=3
-    r=83
-    g=58
-    b=221
     BOLD=`tput bold`
     GREEN=`tput setaf 2`
     PURPLE=`tput setaf 56`
