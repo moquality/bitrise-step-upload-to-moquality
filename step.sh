@@ -2,9 +2,13 @@
 {
     set -ex
 
+    fb=3
+    r=83
+    g=58
+    b=221
     BOLD=`tput bold`
     GREEN=`tput setaf 2`
-    PURPLE=`tput setaf 55`
+    PURPLE=`'\e[0;%s8;2;%s;%s;%sm▒▒▒ ' "$fb" "$r" "$g" "$b"`
     NORMAL=`tput sgr 0` # No formatting
 
     echo -e "${BOLD}${PURPLE}Logging in to your MoQuality account...${NORMAL}"
