@@ -2,18 +2,19 @@
 {
     set -ex
 
-    GREEN='\033[0;32m'
-    PURPLE='\033[0:35m'
-    NC='\033[0m' # No Color
+    BOLD='\e[1mBold'
+    GREEN='\e[59;187;51m'
+    PURPLE='\e[83;58;221m'
+    NORMAL='\e[0mNormal' # No formatting
 
-    echo -e "${PURPLE}Logging in to your MoQuality account...${NC}"
+    echo -e "${BOLD}${PURPLE}Logging in to your MoQuality account...${NORMAL}"
     mq login -a $API_KEY
     echo "`mq user`"
-    echo "${PURPLE}Uploading your app to MoQuality...${NC}"
+    echo "${BOLD}${PURPLE}Uploading your app to MoQuality...${NORMAL}"
     echo "`mq upload -a $APP_ID -f $APK_PATH`"
 
     
-    echo -e "${GREEN}Your app has been successfully uploaded to MoQuality!${NC}"
+    echo -e "${BOLD}${GREEN}Your app has been successfully uploaded to MoQuality!${NORMAL}"
     #
     # --- Exit codes:
     # The exit code of your Step is very important. If you return
