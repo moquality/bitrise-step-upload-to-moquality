@@ -4,7 +4,7 @@
 
     BOLD=`tput bold`
     GREEN=`tput setaf 2`
-    PURPLE=`tput setaf 5`
+    PURPLE=`tput setaf 141`
     NORMAL=`tput sgr 0` # No formatting
 
     echo -e "${BOLD}${PURPLE}Logging in to your MoQuality account...${NORMAL}"
