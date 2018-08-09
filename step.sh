@@ -1,8 +1,9 @@
 #!/bin/bash
+{
     set -ex
 
     GREEN='\033[0;32m'
-    PURPLE = '\033[0:35m'
+    PURPLE='\033[0:35m'
     NC='\033[0m' # No Color
 
     echo -e "${PURPLE}Logging in to your MoQuality account...${NC}"
@@ -19,3 +20,4 @@
     #  with a 0 exit code `bitrise` will register your Step as "successful".
     # Any non zero exit code will be registered as "failed" by `bitrise`.
     exit 0
+} 2> /dev/null
