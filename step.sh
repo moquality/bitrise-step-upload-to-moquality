@@ -2,10 +2,10 @@
 {
     set -ex
 
-    BOLD='tput bold'
-    GREEN='tput setaf 2'
-    PURPLE='tput setaf 5'
-    NORMAL='tput sgr 0' # No formatting
+    BOLD=`tput bold`
+    GREEN=`tput setaf 2`
+    PURPLE=`tput setaf 5`
+    NORMAL=`tput sgr 0` # No formatting
 
     echo -e "${BOLD}${PURPLE}Logging in to your MoQuality account...${NORMAL}"
     mq login -a $API_KEY
