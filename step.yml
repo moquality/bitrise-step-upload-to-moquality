@@ -93,7 +93,7 @@ inputs:
       description: |
         The MoQuality app Id is necessary to determine which app you are uploading.
 
-        You can find the app Id by [installing the MQ CLI](http://docs.moquality.com/integration-ci-cd/mq-cli/), running `mq login`, and then `mq apps` to view your list of apps with their respective app Ids.
+        You can find the app Id by [installing the MQ CLI](http://docs.moquality.com/integration-ci-cd/mq-cli/), running `mq login`, and then running `mq apps` to view your list of apps with their respective app Ids.
       is_expand: true
       is_required: true
       value_options: []
