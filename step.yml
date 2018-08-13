@@ -56,6 +56,8 @@ deps:
   apt_get:
   - name: git
   - name: wget
+  npm:
+  - name: mq-cli
 
 
 toolkit:
