@@ -41,7 +41,7 @@ workflows:
         run_if: true
         inputs:
         - API_KEY: gGQXWKvm1DWAmVpigZtNddj5RuM2
-        - APK_PATH: ./calc.apk
+        - APK_PATH: calc.apk
         - APP_ID: 1
     - script:
         inputs:
